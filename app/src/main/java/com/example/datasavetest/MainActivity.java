@@ -23,5 +23,14 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+
+        Button btnSharedpre = (Button)findViewById(R.id.btn_sharedPre);
+        btnSharedpre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SharedPreActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

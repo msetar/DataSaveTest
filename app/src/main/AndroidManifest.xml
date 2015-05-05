@@ -12,6 +12,7 @@
         </activity>
 
         <activity android:name=".FileSLActivity"></activity>
+        <activity android:name=".SharedPreActivity"></activity>
 
     </application>
 
