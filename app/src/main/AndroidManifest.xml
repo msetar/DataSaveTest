@@ -13,6 +13,7 @@
 
         <activity android:name=".FileSLActivity"></activity>
         <activity android:name=".SharedPreActivity"></activity>
+        <activity android:name=".SQLiteActivity"></activity>
 
     </application>
 

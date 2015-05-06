@@ -32,5 +32,14 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+
+        Button btnSQLite = (Button)findViewById(R.id.btn_sql);
+        btnSQLite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SQLiteActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
