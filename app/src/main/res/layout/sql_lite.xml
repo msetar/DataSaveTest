@@ -7,4 +7,19 @@
         android:layout_height="wrap_content"
         android:text="Crate Table"
         android:id="@+id/btn_create_table"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Data"
+        android:id="@+id/btn_add_data"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Data"
+        android:id="@+id/btn_update_data"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Query"
+        android:id="@+id/btn_query_data"/>
 </LinearLayout>
