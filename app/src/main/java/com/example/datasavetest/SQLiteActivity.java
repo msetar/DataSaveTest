@@ -2,6 +2,7 @@ package com.example.datasavetest;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ public class SQLiteActivity extends BaseActivity {
     private Button _btnAddDate;
     private Button _btnUpdateData;
     private Button _btnQueryData;
+    private Button _btnContact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +84,15 @@ public class SQLiteActivity extends BaseActivity {
                     }while(cursor.moveToNext());
                 }
                 cursor.close();
+            }
+        });
+
+        _btnContact = (Button)findViewById(R.id.btn_contact);
+        _btnContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SQLiteActivity.this,ContactActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.datasavetest">
 
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
     <application android:allowBackup="true" android:label="@string/app_name"
         android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme">
 
@@ -14,6 +16,7 @@
         <activity android:name=".FileSLActivity"></activity>
         <activity android:name=".SharedPreActivity"></activity>
         <activity android:name=".SQLiteActivity"></activity>
+        <activity android:name=".ContactActivity"></activity>
 
     </application>
 
